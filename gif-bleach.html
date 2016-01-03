@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" type="text/css" href="materialize.min.css" media="screen" />
 
 <HEAD>
     <title>Help! I Just Saw Something Horrible!</title>
     <script src="JAVASCRIPT.js"></script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <item name="colorPrimary">#FF9800</item>
-        <item name="colorButtonNormal">#FF9800</item>
-        <item name="android:colorPrimaryDark">#e57e00</item>
-        <item name="android:navigationBarColor">#e57e00</item>
 </HEAD>
 <style>
-
     body {
         background: #00009a;
+        margin: 0;
     }
     
     h1 {
@@ -44,27 +41,33 @@
     img.icon {
         width: 40px;
     }
-     @media screen and (max-width: 700px) {
-         img.icon {
-             word-wrap:break-word;
-             
-         }
-         img {
-             max-height: 95%;
-             max-width: 95%;
-             float: right;
-         }
-         h1 {
-             font-size: 50px;
-         }
-         button {
-        padding: 16px;
+    
+    div.spin {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100px;
     }
-    div.random {
-        width: auto;
-        height: auto;
+    
+    @media screen and (max-width: 700px) {
+        img.icon {
+            word-wrap: break-word;
+        }
+        img {
+            max-height: 95%;
+            max-width: 95%;
+            float: right;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        button {
+            padding: 16px;
+        }
+        div.random {
+            width: auto;
+            height: auto;
+        }
     }
-     }
 </style>
 
 <body>
@@ -74,22 +77,20 @@
     <div class="random">
         <script LANGUAGE="JavaScript">
             showImage();
+            // Materialize.toast(message, displayLength, className, completeCallback);
+             Materialize.toast(theImages[whichImage], 4000); // 4000 is the duration of the toast
         </script>
-
         <a href="gif-bleach.html">
             <button>
                 <img src="refresh.png" class="icon"></img>
             </button>
         </a>
     </div>
-<!-- Desktop -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-4787481505404118"
-     data-ad-slot="6747359464"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <!-- Desktop -->
+    <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4787481505404118" data-ad-slot="6747359464"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </body>
 
 </html>

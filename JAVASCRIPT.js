@@ -24,4 +24,3 @@ var whichImage = Math.round(Math.random()*(p-1));
 function showImage(){
 document.write('<img src="'+theImages[whichImage]+'">');
 };
-
